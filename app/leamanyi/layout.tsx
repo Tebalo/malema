@@ -16,7 +16,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="flex h-screen">
+          <aside className="w-1/6 bg-gray-200 dark:bg-gray-800">
+            {/* Your sidebar content*/}
+          </aside>
+          {children}
+        </div>
+        </body>
     </html>
   )
 }
