@@ -1,5 +1,6 @@
 "use client"
 import React, {useState} from 'react'
+import styles from './custom-scrollbar.module.css';
 
 interface Item{
     text:string;
@@ -26,7 +27,7 @@ export const Page: React.FC = () =>{
 
     return (
         <main className="flex min-h-screen flex-col items-center justify-between"> 
-            <div className="flex-grow overflow-y-auto justify-center w-full">
+            <div className="flex-grow overflow-y-auto justify-center w-full ${styles.customScrollbar}">
                 {/* Map through the list and render each item as a paragraph */}
                 {items.map((item: Item, index: number)=>(
                     <div className="bg-slate-200 dark:bg-slate-600 mb-1 flex mr-1">
