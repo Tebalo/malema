@@ -2,6 +2,7 @@
 import React, {useState} from 'react'
 import styles from './custom-scrollbar.module.css';
 
+
 interface Item{
     text:string;
 }
@@ -17,14 +18,12 @@ export const Page: React.FC = () =>{
         const newItem: Item = {
             text: inputText,
         }
-
         // Append the new item to the list of items
         setItems([...items, newItem]);
 
         // Clear the form input
         setInputText('');
     }
-
     return (
         <main className="flex min-h-screen flex-col items-center justify-between"> 
             <div className="flex-grow overflow-y-auto justify-center w-full ${styles.customScrollbar}">

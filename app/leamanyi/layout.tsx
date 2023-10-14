@@ -1,6 +1,7 @@
 import '../globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import NavBar from './_navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({
           {/*<aside className="w-1/6 bg-gray-200 dark:bg-gray-800 sticky top-0">
             {/* Your sidebar content*/}
           {/*</aside>*/}
+          <NavBar/>
             {children}
           
         {/*</div>*/}
