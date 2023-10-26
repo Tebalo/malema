@@ -4,7 +4,7 @@ import styles from './custom-scrollbar.module.css';
 
 
 interface Item{
-    text:string;
+    request:string;
     response:string;
 }
 
@@ -17,7 +17,7 @@ export const Page: React.FC = () =>{
 
         // Create a new item using the input text
         const newItem: Item = {
-            text: inputText,
+            request: inputText,
             response:inputText,
         }
         // Append the new item to the list of items
@@ -43,7 +43,7 @@ export const Page: React.FC = () =>{
                                     <span className="sr-only">Upload image</span>
                                 </button>
                                 <p key={index} className="mb-3 text-gray-500 dark:text-gray-400 p-2">
-                                    {item.text}
+                                    {item.request}
                                 </p>
                             </div>
                         </div>
