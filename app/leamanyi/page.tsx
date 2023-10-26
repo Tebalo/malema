@@ -27,7 +27,7 @@ export const Page: React.FC = () =>{
         setInputText('');
     }
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between"> 
+        <main className="flex min-h-screen flex-col items-center justify-between dark:bg-slate-600"> 
             <div className="flex-grow overflow-y-auto justify-center w-full ${styles.customScrollbar}">
                 {/* Map through the list and render each item as a paragraph */}
                 {items.map((item: Item, index: number)=>(
