@@ -44,7 +44,7 @@ export default function Page(){
                 <div className="relative">
                         <button 
                             type="button" 
-                            className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" 
+                            className="flex mr-3 text-sm bg-gray-100 dark:bg-slate-700 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" 
                             id="user-menu-button" 
                             aria-expanded="false" 
                             onClick={toggleDropdown}
