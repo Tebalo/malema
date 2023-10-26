@@ -27,7 +27,7 @@ export const Page: React.FC = () =>{
         setInputText('');
     }
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between dark:bg-slate-600"> 
+        <main className="flex min-h-screen flex-col items-center justify-between dark:bg-slate-500"> 
             <div className="flex-grow overflow-y-auto justify-center w-full ${styles.customScrollbar}">
                 {/* Map through the list and render each item as a paragraph */}
                 {items.map((item: Item, index: number)=>(
@@ -47,7 +47,7 @@ export const Page: React.FC = () =>{
                                 </p>
                             </div>
                         </div>
-                        <div className="bg-slate-200 dark:bg-slate-900 mb-1 flex ">
+                        <div className="bg-white dark:bg-gray-900 mb-0 flex ">
                             <div className="flex md:px-10 lg:px-96">
                                 <button type="button" className="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
                                     <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 18">
@@ -65,16 +65,16 @@ export const Page: React.FC = () =>{
                     </div>
                 ))}
             </div>
-            <div className='bg-gray-100 dark:bg-gray-600 sticky bottom-0 w-full justify-center pb-5 pt-2 mx-72'>
+            <div className='from-gray-300 bg-gradient-to-t dark:from-slate-600 sticky bottom-0 w-full justify-center pb-5 pt-2 mx-72'>
                 <form className="z-10 md:px-10 lg:px-96 px-1" onSubmit={handleSubmit}>
                     <label htmlFor="chat" className="sr-only">Your message</label>
-                    <div className="flex items-center px-3 py-2 rounded-lg bg-gray-50 dark:bg-gray-700">
+                    <div className="flex items-center px-3 py-2 rounded-lg bg-gray-300 dark:bg-gray-800">
                         <textarea 
                         id="chat" 
                         rows={1} 
                         value={inputText}
                         onChange={(e) => setInputText(e.target.value)}
-                        className="block mx-4 p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300
+                        className="block mx-4 p-2.5 w-full text-sm text-gray-900 bg-slate-300 rounded-lg border border-gray-600
                         focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
                         dark:focus:ring-blue-500 dark:focus:border-blue-500 relative z-10" 
                         placeholder="Send your message..."
