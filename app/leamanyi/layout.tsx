@@ -24,7 +24,6 @@ export default function RootLayout({
           {/*</aside>*/}
           <NavBar/>
             {children}
-          
         {/*</div>*/}
         </body>
     </html>
