@@ -8,3 +8,8 @@ Content Source From Online and Books
 2. 
 
 NB. flex-1 min-h-screen flex-col items-center justify-between p-4 ml-1/4
+
+Frontend: NextJS
+Backend: Django REST Framework
+
+Setswana parts of speech process
