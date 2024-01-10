@@ -1,36 +1,57 @@
 "use client"
 import React, {useState} from 'react'
 import styles from './custom-scrollbar.module.css';
+import axios from 'axios';
+import JsonRenderer from '../components/JsonRenderer';
 
-
-interface Item{
-    request:string;
-    response:string;
+interface Item {
+  request: string;
+  response: Record<string, any>; // Updated response type to be an object
 }
+
 
 export const Page: React.FC = () =>{
     const [items, setItems] = useState<Item[]>([]); // State for the list of items
     const [inputText, setInputText] = useState(''); // State for the form input
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        // Create a new item using the input text
-        const newItem: Item = {
-            request: inputText,
-            response:inputText,
-        }
+        // Make a POST request to the API
+        try {
+            const response = await fetch('http://localhost:8000/v1/setswana-nltk/', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                  'Accept':'*/*',
+                  'Connection':'keep-alive',
+                },
+                body: JSON.stringify({ text: inputText }),
+                credentials: 'include',
+            });
+
+            const responseData = await response.json(); // Parse the JSON response
+           
+            const newItem: Item = {
+                request: inputText,
+                response: responseData, // Update to handle the actual response structure
+            };
+
         // Append the new item to the list of items
         setItems([...items, newItem]);
 
         // Clear the form input
         setInputText('');
-    }
+        } catch (error) {
+        console.error('Error making the request:', error);
+        }
+    };
     return (
         <main className="flex min-h-screen flex-col items-center justify-between dark:bg-slate-500"> 
             <div className="flex-grow overflow-y-auto justify-center w-full ${styles.customScrollbar}">
                 {/* Map through the list and render each item as a paragraph */}
                 {items.map((item: Item, index: number)=>(
+                    // eslint-disable-next-line react/jsx-key
                     <div className=''>
                         <div className="bg-slate-200 dark:bg-slate-600 mb-0 flex ">
                             <div className="flex md:px-10 lg:px-96">
@@ -57,9 +78,9 @@ export const Page: React.FC = () =>{
                                     </svg>
                                     <span className="sr-only">Upload image</span>
                                 </button>
-                                <p key={index} className="mb-3 text-gray-500 dark:text-gray-400 p-2">
-                                    {item.response}
-                                </p>
+                                <div className="container mx-auto my-8">
+                                    <JsonRenderer data={item.response} />
+                                </div>
                             </div>
                         </div>
                     </div>
