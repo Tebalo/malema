@@ -11,7 +11,7 @@ export default function Home() {
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="/leamanyi"
+            href="/dikaralotsapuo"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -61,139 +61,146 @@ export default function Home() {
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
-          href="/leamanyi"
+          href="/dikaralotsapuo"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Leina{' '}
+            Dikarolo Tsa Puo
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Karolo ya puo e e bitsang selo/ Lereo la sengwe.
+            Go na le dikarolo tsa puo tse di farologaneng e bong: • Leina • Lemedi • Lediri • Ditlhaodi 
           </p>
         </a>
 
         <a
-          href="/leamanyi"
+          href="/dikaralotsapuo"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Letlhalosi{' '}
+            Dinaane
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-          Letlhaodi lona letlhaola leina ka popego, mmala, le palo.
+          Go le gantsi matseno a naane a simolola ka mafoko “Ga twe e rile/Bogologolotala...”
           </p>
         </a>
 
         <a
-          href="/leamanyi"
+          href="/dikaralotsapuo"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Lerui{' '}
+            Dithamalakane
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+            -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Lerui ke letlhaodi le le tlhaolang ka go bontsha gore selo ke sa eng. Sekai, Borokgwe jwa letsela bo onetse.
+            Legadima le pota motse - Namane.
+            Sa re nnyedi sa re tse! - Logadima.
+            Sekananyana mafoko se a tsaya kae - Seyalemowa
           </p>
         </a>
 
         <a
-          href="/leamanyi"
+          href="/dikaralotsapuo"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Leemedi{' '}
+            Maele
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Ke karolo ya puo e e emelang leina mo seeleng.
-            Dikai: bone, tsone ,yone ,jone ,lone jalo jalo
+            (-) Go ja motho direthe.
+            (-) Go loma motho tsebe.
+            (-) Go rothisa mmutla madi.
+            (-) Go ikepela lemena.
           </p>
         </a>
 
         <a
-          href="/leamanyi"
+          href="/dikaralotsapuo"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Letlhaodi{' '}
+            Diane
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Letlhalosi le tlhalosa gore tiro e diragala jang (mokgwa), leng (nako?), kae? (felo) .
+            Mphemphe o a lapisa motho o kgonwa ke sa gagwe. Go botoka go nna le selo sa gago go na le go adima gongwe go kop
           </p>
         </a>
 
         <a
-          href="/leamanyi"
+          href="/dikaralotsapuo"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Leamanyi{' '}
+            Sekao{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Leamanyi Ke lefoko le le amanyang dilo tse di farologaneng. 
+            Mosola wa phefofatso e ke go dira gore mafoko kgotsa molaetsa o amogelesege bonolo, e seng jalo o
+            ka bonwa molato wa go tlhapatsa bagolo kgotsa wa go se rekegele ba ba utlwileng botlhoko.
           </p>
         </a>
 
         <a
-          href="/leamanyi"
+          href="/dikaralotsapuo"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Lediri{' '}
+            Dikapuo{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Ke fa lediri le dirisiwa go bega sengwe.
+          Dikapuo di dirisiwa thata mo puong ya poko.Di dira gore motho a kgone go tshwantsha le go itirela
+          motho kgotsa selo sa maitlhomo se go buiwang ka sona.
           </p>
         </a>
 
         <a
-          href="/leamanyi"
+          href="/dikaralotsapuo"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Lesupi{' '}
+            Maboko
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+            -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Mefuta e ya lesupi e farologana go ya ka maemo kgotsa sekgala sa selo se se sutswang,go tloga fa mmuing..
+          Poko ke maikutlo, dikeletso le dikakanyo tse di senolwang ke mmoki ka puo e e nang le moribo le
+          merethetho.
           </p>
         </a>
       </div>

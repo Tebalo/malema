@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 import styles from './custom-scrollbar.module.css';
 import axios from 'axios';
 import JsonRenderer from '../components/JsonRenderer';
+import { Suspense } from 'react';
 
 interface Item {
   request: string;
@@ -19,7 +20,7 @@ export const Page: React.FC = () =>{
 
         // Make a POST request to the API
         try {
-            const response = await fetch('http://localhost:8000/v1/setswana-nltk/', {
+            const response = await fetch('http://services.26digitaldev.com/v1/setswana-nltk/', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
@@ -63,7 +64,7 @@ export const Page: React.FC = () =>{
                                     </svg>
                                     <span className="sr-only">Upload image</span>
                                 </button>
-                                <p key={index} className="mb-3 text-gray-500 dark:text-gray-400 p-2">
+                                <p key={index} className="mb-3 text-gray-900 dark:text-gray-400 p-2">
                                     {item.request}
                                 </p>
                             </div>
@@ -78,9 +79,12 @@ export const Page: React.FC = () =>{
                                     </svg>
                                     <span className="sr-only">Upload image</span>
                                 </button>
+                                <Suspense></Suspense>
                                 <div className="container mx-auto my-8">
-                                    <JsonRenderer data={item.response} />
-                                </div>
+                                    <Suspense fallback={<p>Loading feed...</p>}>
+                                        <JsonRenderer data={item.response} />
+                                    </Suspense>
+                                </div> 
                             </div>
                         </div>
                     </div>

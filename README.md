@@ -13,3 +13,11 @@ Frontend: NextJS
 Backend: Django REST Framework
 
 Setswana parts of speech process
+
+Sample input
+O dirisa dilo tsa kwa tirong ya gagwe tse di rekwang kwa mmolong o motona wa Palapye.
+Koloi ya mosimane yo o berekang kwa Kerekeng e tona ya Palapye.
+Koloi ya kwa maemelong a dikoloi tsa dithoto. 
+Dikoloi tse ditona tsa basimane ba ba fetileng fa maabane ba ga Kgosi.
+Koloi e e mmala o mosweu fa lebating le le kwa morago.
+O tswa kwa kgaolong ya Palapye e e lemang dijwalo tse dintsi ka temo ya nosetso.
