@@ -20,7 +20,7 @@ const DikaroloTsaPuo: React.FC = () =>{
 
         // Make a POST request to the API
         try {
-            const response = await fetch('http://services.26digitaldev.com/v1/setswana-nltk/', {
+            const response = await fetch('https://services.26digitaldev.com/v1/setswana-nltk/', {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
