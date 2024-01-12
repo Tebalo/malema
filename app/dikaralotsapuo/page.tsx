@@ -11,7 +11,7 @@ interface Item {
 }
 
 
-export const Page: React.FC = () =>{
+export const DikaroloTsaPuo: React.FC = () =>{
     const [items, setItems] = useState<Item[]>([]); // State for the list of items
     const [inputText, setInputText] = useState(''); // State for the form input
 
@@ -120,4 +120,4 @@ export const Page: React.FC = () =>{
         </main>
     );
 }
-export default Page;
+export default DikaroloTsaPuo;
