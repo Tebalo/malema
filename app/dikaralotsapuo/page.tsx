@@ -11,7 +11,7 @@ interface Item {
 }
 
 
-export const DikaroloTsaPuo: React.FC = () =>{
+const DikaroloTsaPuo: React.FC = () =>{
     const [items, setItems] = useState<Item[]>([]); // State for the list of items
     const [inputText, setInputText] = useState(''); // State for the form input
 
