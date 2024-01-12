@@ -16,7 +16,7 @@ const getColorByDepth = (depth: number): string => {
   return colors[depth % colors.length];
 };
 const getLabel = (key: string): string => {
-  const label: { [key: string]: string } = {"S": "Seele", "NN-T": "Leina+Tlhaodi","VRB":"Lediri"};
+  const label: { [key: string]: string } = {"S": "Seele", "NN-T": "leina","VRB":"Lediri"};
 
   if (key in label) {
     return label[key];
